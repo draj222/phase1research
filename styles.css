@@ -506,7 +506,7 @@ form input, form button{
     }
 
     .home .row .content h3{
-        font-size: 8rem;
+        font-size: 4rem;
     }
 }
 @media (max-width: 768px){
@@ -519,7 +519,7 @@ form input, form button{
     }
 
     .header .flex .navbar{
-        position: absolte;
+        position: absolute;
         top:99%;
         left:0;
         right:0;
