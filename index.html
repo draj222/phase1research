@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase 1</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+<header class="header">
+    <section class="flex">
+        <a href="#home" class="logo">Phase 1</a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#team">team</a>
+        <a href="#enroll">enroll</a>
+        <a href="#bam">become a mentor</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+</header>
+
+<section class="home" id="home">
+    <div class="row">
+        <div class="content">
+            <h3>phase <span>1</span></h3>
+            <a href="#contact" class="btn">contact us</a>
+        </div>
+        
+        
+        <div class="image">
+            <img src="./images/boy-laptop.png" alt="">
+        </div>
+    </div>
+</section>
+
+
+<section class="count">
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <div class="content">
+                <h3>Mentors From</h3>
+                <p>T20 Universities</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-computer"></i>
+            <div class="content">
+                <h3>Speciailized In</h3>
+                <p>AI Research</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-book"></i>
+            <div class="content">
+                <h3>Gain Experience</h3>
+                <p>In Research</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="row">
+        <div class="image">
+            <img src="./images/logo.png" alt="">
+        </div>
+        <div class="content">
+            <h3>why <span id="mission-head">us?</span></h3>
+            <p id="mission">In today's day and age, research is a fundamental skill that every college applicant and member of the workforce must have.
+                Finding affordable research is a challenging task these days, and Phase 1 has a goal to help with that as well, offering affordable services.
+                Phase 1's mission is to provide research services for students with little to no research experience in order to equip them with skills 
+            needed to succeed. Phase 1 serves as the first step, an introductory approach, for students to get exposed to research. 
+        With mentors studying at Top 20 universities, students will be able to learn from these experienced individuals, as well as get 
+    guidance with research projects and/or papers. </p>
+            <a href="contact" class="btn">contact us</a>
+        </div>
+    </div>
+</section>
+
+<section class="team" id="team">
+
+    <h1 class="heading">our <span>team</span>
+    <div class="swiper team-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+                <img src="./images/drajpic.jpg" alt="dheeraj" id="dheeraj">
+                <div class="share">
+                    <a href="https://www.linkedin.com/in/dheeraj-tallapragada-685371232/" class="fab fa-linkedin-in"></a>
+                    <a href="https://www.instagram.com/drajt22/" class="fab fa-instagram"></a>
+                    <a href="#" class="fa-solid fa-briefcase"></a>
+                </div>
+                <h3>dheeraj tallapragada</h3>
+                <p class="desc">Co-Founder</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="./images/vedant.png" alt="vedant" id="vedant">
+                <div class="share">
+                    <a href="https://www.linkedin.com/in/vedant-sagare-614430276/" class="fab fa-linkedin-in"></a>
+                    <a href="https://www.instagram.com/vedantsagare.tt/" class="fab fa-instagram"></a>
+                    
+                </div>
+                <h3>vedant sagare</h3>
+                <p class="desc">Co-Founder</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="./images/harsha.png" alt="harsha" id="harsha">
+                <div class="share">
+                    <a href="https://www.linkedin.com/in/harsha-vajrala-09b3b9298/" class="fab fa-linkedin-in"></a>
+                    <a href="https://www.instagram.com/harshavaj/" class="fab fa-instagram"></a>
+                </div>
+                <h3>harsha vajrala</h3>
+                <p class="desc">Co-Founder</p>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    </h1>
+</section>
+
+
+<section class="enroll" id="enroll">
+    <h1 class="heading">Enroll <span>Now!</span></h1>
+    <div class="row">
+        <div class="image">
+            <img src="./images/enroll.png" alt="">
+        </div>
+        <form action="https://formsubmit.co/d96edec0acbc9550736e7c1ef0ff5580" method="POST">
+            <span>your name</span>
+            <input type="text" required placeholder="enter your full name" id="name" maxlength="50" name="name" class="box">
+            <span>your email</span>
+            <input type="email" required placeholder="enter your email address" id="email" maxlength="50" name="email" class="box">
+            <span>your number</span>
+            <input type="number" required placeholder="enter your phone number" id="phone" max="9999999999" min="0" name="number" class="box" onkeypress="if(this.value.length == 10) return false;">
+            <br>
+            <button type="submit" value="send message" class="btn" name="send">Enroll Now!</button>
+        </form>
+    </div>
+</section>
+
+
+<section class="bam" id="bam">
+    <h1 class="heading">Become A <span>Mentor!</span></h1>
+    <div class="row">
+        <div class="image">
+            <img src="./images/enroll.png" alt="">
+        </div>
+        <form action="https://formsubmit.co/d96edec0acbc9550736e7c1ef0ff5580" method="POST" enctype="multipart/form-data">
+            <span>your name</span>
+            <input type="text" required placeholder="enter your full name" id="name" maxlength="50" name="name" class="box">
+            <span>your email</span>
+            <input type="email" required placeholder="enter your email address" id="email" maxlength="50" name="email" class="box">
+            <span>your number</span>
+            <input type="number" required placeholder="enter your phone number" id="phone" max="9999999999" min="0" name="number" class="box" onkeypress="if(this.value.length == 10) return false;">
+            <br>
+            <span id="fileLabel">upload your resume (PDF)</span>
+            <!-- <input type="file" id="resume" name="resume" accept=".pdf" /> -->
+            <input type="file" id="resume" name="resume" accept="resume/pdf">
+            <br>
+            <button type="submit" value="send message" class="btn" name="send">Join Our Team</button>
+        </form>
+    </div>
+</section>
+
+
+
+<section class="contact" id="contact">
+    <h1 class="heading">contact <span>us</span></h1>
+    <div class="row">
+        <div class="image">
+            <img src="./images/contact.png" alt="">
+        </div>
+        <form action="https://formsubmit.co/d96edec0acbc9550736e7c1ef0ff5580" method="POST">
+            <span>your name</span>
+            <input type="text" required placeholder="enter your full name" id="name" maxlength="50" name="name" class="box">
+            <span>your email</span>
+            <input type="email" required placeholder="enter your email address" id="email" maxlength="50" name="email" class="box">
+            <span>your number</span>
+            <input type="number" required placeholder="enter your phone number" id="phone" max="9999999999" min="0" name="number" class="box" onkeypress="if(this.value.length == 10) return false;">
+            <span>message</span>
+            <br>
+            <textarea name="message" id="message" rows="4" placeholder="enter your message"></textarea>
+            <br>
+            <button type="submit" value="send message" class="btn" name="send">Submit</button>
+        </form>
+    </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
