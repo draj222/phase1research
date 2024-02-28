@@ -81,6 +81,18 @@ section{
     
 
 }
+
+#head-insta{
+    color: var(--blue);
+    font-size: 2rem;
+}
+
+#head-linkedin{
+    color: var(--blue);
+    font-size: 2rem;
+    margin-left: -13px;
+}
+
 .heading span{
     color: var(--blue);
 }
