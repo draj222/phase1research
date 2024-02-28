@@ -617,6 +617,9 @@ footer{
 
 
 
+
+
+
 @media (max-width:991px){
     html{
         font-size: 55%;
@@ -625,10 +628,28 @@ footer{
     .home .row .content h3{
         font-size: 4rem;
     }
+
+    .team .swiper-pagination-bullet {
+        background-color: #ffffff; /* default color */
+        border: 1px solid var(--blue);
+    }
+    
+    .team .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: var(--blue); /* active slide color */
+    }
 }
 @media (max-width: 768px){
     #menu-btn{
         display: inline-block;
+    }
+
+    .team .swiper-pagination-bullet {
+        background-color: #ffffff; /* default color */
+        border: 1px solid var(--blue);
+    }
+    
+    .team .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: var(--blue); /* active slide color */
     }
 
     #menu-btn.fa-times{
@@ -673,6 +694,14 @@ footer{
         font-size: 3rem;
         
     }
+    .team .swiper-pagination-bullet {
+        background-color: #ffffff; /* default color */
+        border: 1px solid var(--blue);
+    }
+    
+    .team .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: var(--blue); /* active slide color */
+    }
 }
 
 @media (max-width: 700px){
@@ -687,5 +716,13 @@ footer{
         width: 100%;
         text-align: center;
 
+    }
+    .team .swiper-pagination-bullet {
+        background-color: #ffffff; /* default color */
+        border: 1px solid var(--blue);
+    }
+    
+    .team .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: var(--blue); /* active slide color */
     }
 }

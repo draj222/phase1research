@@ -16,6 +16,15 @@ menuBtn.onclick = () =>{
       clickable: true,
     },
 
+    on: {
+      slideChange: function () {
+          const paginationBullets = document.querySelectorAll('.team .swiper-pagination-bullet');
+          paginationBullets.forEach((bullet, index) => {
+              bullet.classList.toggle('swiper-pagination-bullet-active', index === swiper.activeIndex);
+          });
+      }
+  },
+
     breakpoints: {
         540: {
           slidesPerView: 1,
