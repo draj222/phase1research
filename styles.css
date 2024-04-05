@@ -301,6 +301,10 @@ section{
     border: solid var(--blue) 5px;
 }
 
+#lochan{
+    border: solid var(--blue) 5px;
+}
+
 
 .enroll .row{
     display: flex;
