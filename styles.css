@@ -621,6 +621,13 @@ footer{
    text-transform: none;
 }
 
+.swiper-button-next, .swiper-button-prev {
+    display: block !important; /* Ensure arrows are always displayed */
+    opacity: 1 !important; /* Ensure arrows are fully opaque */
+    visibility: visible !important; /* Ensure arrows are not hidden */
+}
+
+
 
 
 

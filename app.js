@@ -7,10 +7,45 @@ menuBtn.onclick = () =>{
 }
 
 
+  // var swiper = new Swiper(".team-slider", {
+  //   spaceBetween: 20,
+  //   grabCursor: true,
+  //   loop:true,
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     clickable: true,
+  //   },
+
+  //   on: {
+  //     slideChange: function () {
+  //         const paginationBullets = document.querySelectorAll('.team .swiper-pagination-bullet');
+  //         paginationBullets.forEach((bullet, index) => {
+  //             bullet.classList.toggle('swiper-pagination-bullet-active', index === swiper.activeIndex);
+  //         });
+  //     }
+  // },
+
+  //   breakpoints: {
+  //       540: {
+  //         slidesPerView: 1,
+          
+  //       },
+  //       768: {
+  //         slidesPerView: 2,
+          
+  //       },
+  //       1024: {
+  //         slidesPerView: 3,
+          
+  //       },
+  //     },
+  // });
+
+
   var swiper = new Swiper(".team-slider", {
     spaceBetween: 20,
     grabCursor: true,
-    loop:true,
+    loop: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -24,21 +59,22 @@ menuBtn.onclick = () =>{
           });
       }
   },
-
+    // Explicitly enable navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
     breakpoints: {
-        540: {
-          slidesPerView: 1,
-          
-        },
-        768: {
-          slidesPerView: 2,
-          
-        },
-        1024: {
-          slidesPerView: 3,
-          
-        },
+      540: {
+        slidesPerView: 1,
       },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
   });
 
   const resumeInput = document.getElementById('resume');
