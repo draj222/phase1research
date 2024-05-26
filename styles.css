@@ -647,11 +647,12 @@ footer{
     .team .swiper-pagination-bullet {
         background-color: #ffffff; /* default color */
         border: 1px solid var(--blue);
-    }
-    
-    .team .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      }
+      
+      .team .swiper-pagination-bullet.swiper-pagination-bullet-active {
         background-color: var(--blue); /* active slide color */
-    }
+      }
+      
 }
 @media (max-width: 768px){
     #menu-btn{

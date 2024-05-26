@@ -50,19 +50,17 @@ menuBtn.onclick = () =>{
       el: ".swiper-pagination",
       clickable: true,
     },
-
-    on: {
-      slideChange: function () {
-          const paginationBullets = document.querySelectorAll('.team .swiper-pagination-bullet');
-          paginationBullets.forEach((bullet, index) => {
-              bullet.classList.toggle('swiper-pagination-bullet-active', index === swiper.activeIndex);
-          });
-      }
-  },
-    // Explicitly enable navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+    on: {
+      slideChange: function () {
+        const paginationBullets = document.querySelectorAll('.team .swiper-pagination-bullet');
+        paginationBullets.forEach((bullet, index) => {
+          bullet.classList.toggle('swiper-pagination-bullet-active', index === swiper.realIndex);
+        });
+      }
     },
     breakpoints: {
       540: {
@@ -76,6 +74,7 @@ menuBtn.onclick = () =>{
       },
     },
   });
+  
 
   const resumeInput = document.getElementById('resume');
   const fileLabel = document.getElementById('fileLabel');
