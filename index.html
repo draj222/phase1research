@@ -26,6 +26,7 @@
         <a href="#team">team</a>
         <a href="#enroll">enroll</a>
         <a href="#bam">become a mentor</a>
+        <a href="#sac">start a chapter</a>
         <a href="#contact">contact</a>
         
     </nav>
@@ -197,6 +198,34 @@
             <br>
             <button type="submit" value="send message" class="btn" name="send">Join Our Team</button>
         </form>
+    </div>
+</section>
+
+<section class="sac" id="sac">
+    <h1 class="heading">Start a <span>Chapter!</span></h1>
+    <div class="row">
+        <div class="image">
+            <img src="./images/school.png" alt="">
+        </div>
+        <form action="https://formsubmit.co/help.phase1@gmail.com" method="POST">
+            <span>your name</span>
+            <input type="text" required placeholder="enter your full name" id="name" maxlength="50" name="name" class="box">
+            <span>your email</span>
+            <input type="email" required placeholder="enter your email address" id="email" maxlength="50" name="email" class="box">
+            
+            <span>your number</span>
+            <input type="number" required placeholder="enter your phone number" id="phone" max="9999999999" min="0" name="number" class="box" onkeypress="if(this.value.length == 10) return false;">
+            <span id="school">School Name</span>
+            <input type="text" required placeholder="school name:" id="name" maxlength="50" name="school" class="box">
+            <br>
+            <span id="address">School Address</span>
+            <input type="text" required placeholder="school address:" id="address" maxlength="100" name="address" class="box">
+            <br>
+            <br>
+            <p id="bylaws">By submitting this form, you agree to the bylaws embedded below.</p>
+            <button type="submit" value="send message" class="btn" name="send">Enroll Now!</button>
+        </form>
+        <iframe src="./images/PHASE 1 CHAPTER REQUIREMENTS.pdf" width="100%" height="500px"></iframe>
     </div>
 </section>
 

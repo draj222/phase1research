@@ -453,7 +453,39 @@ form input, form button{
 }
 
 
+.sac .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
 
+.sac .row .image{
+    flex: 1 1 40rem;
+}
+
+.sac .row .image img{
+    width: 100%;
+}
+
+.sac .row form {
+    flex: 1 1 40rem;
+}
+.sac .row form .box{
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    font-size: 1.8rem;
+    color: var(--white);
+    padding: 1.4rem;
+    text-transform: none;
+}
+.sac .row form span{
+    font-size: 1.5rem;
+    color: var(--grey);
+}
 
 
 
@@ -619,6 +651,14 @@ footer{
 #essay{
    font-size: 16px;
    text-transform: none;
+}
+
+#bylaws{
+    color: var(--grey);
+    font-size: 16px;
+    text-transform: none;
+    text-align: center;
+    
 }
 
 
