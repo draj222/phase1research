@@ -155,57 +155,71 @@ section {
     width: 100%;
 }
 
-.count {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-    text-align: center;
-    margin-top: 2rem;
+.home .row .content h3 {
+    margin-bottom: 1rem;
+    font-size: 10rem;
+    color: var(--white);
+    line-height: 1;
+}
+
+.home .row .content h3 span {
+    color: var(--blue);
+}
+
+#mission-head {
+    color: var(--blue);
 }
 
 .count .box-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-    text-align: center;
-    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2rem;
+    align-items: flex-start;
 }
 
-.count .box {
-    flex: 1 1 30rem;
-    border: var(--blue) 2px solid;
-    border-radius: 5rem;
-    padding: 2rem;
+.count .box-container .box {
     background-color: var(--light-bg);
+    border-radius: .5rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
-.count .box i {
-    font-size: 4rem;
+.desc {
+    font-size: 1.5rem;
     color: var(--blue);
-    margin-bottom: 1rem;
 }
 
-.count .box h3 {
-    font-size: 2.5rem;
+.count .box-container .box i {
+    font-size: 5rem;
+    color: var(--blue);
+}
+
+.count .box-container .box .content h3 {
+    font-size: 2rem;
     color: var(--white);
 }
 
-.count .box p {
-    font-size: 1.5rem;
+.count .box-container .box .content p {
+    font-size: 1.6rem;
     color: var(--grey);
+}
+
+#mission {
+    text-transform: none;
 }
 
 .about .row {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .about .row .image {
-    flex: 1 1 45rem;
+    flex: 1 1 40rem;
 }
 
 .about .row .image img {
@@ -213,125 +227,226 @@ section {
 }
 
 .about .row .content {
-    flex: 1 1 45rem;
+    text-align: center;
+    flex: 1 1 40rem;
 }
 
 .about .row .content h3 {
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--white);
 }
 
 .about .row .content p {
-    font-size: 1.6rem;
-    color: var(--grey);
-    line-height: 2;
     padding: 1rem 0;
-}
-
-.explore {
-    padding: 5rem 0;
-    background-color: var(--light-bg);
-    text-align: center;
-}
-
-.explore .heading {
-    font-size: 4rem;
-    color: var(--white);
-    margin-bottom: 3rem;
-}
-
-.explore-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.explore-box {
-    background: var(--dark-bg);
-    padding: 2rem;
-    border-radius: .5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 30rem;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.explore-box h3 {
-    font-size: 2.5rem;
-    color: var(--white);
-    margin-bottom: 1rem;
-}
-
-.explore-box p {
-    font-size: 1.4rem;
-    color: var(--grey);
-    margin-bottom: 2rem;
-    line-height: 1.6;
-    flex-grow: 1;
-}
-
-.btn-explore {
-    display: inline-block;
-    padding: 1rem 2rem;
+    line-height: 2;
     font-size: 1.6rem;
-    color: var(--white);
-    background: var(--blue);
-    border-radius: .5rem;
-    text-decoration: none;
-    transition: background 0.3s;
-    align-self: center;
-    margin-top: 2rem;
+    color: var(--grey);
 }
 
-.btn-explore:hover {
-    background: var(--dark-blue);
+.team .slide {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 4rem;
 }
 
-.team, .mentors, .advisory-board {
-    padding: 5rem 0;
-    background-color: var(--light-bg);
-}
-
-.team .heading, .mentors .heading, .advisory-board .heading {
-    font-size: 4rem;
-    color: var(--white);
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-.team .swiper-slide, .mentors .swiper-slide, .advisory-board .swiper-slide {
-    background-color: var(--light-bg);
-    padding: 2rem;
-    border-radius: .5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.team .swiper-slide img, .mentors .swiper-slide img, .advisory-board .swiper-slide img {
+.team .slide img {
+    height: 55rem;
     width: 100%;
-    border-radius: 5rem;
+    object-fit: cover;
+    border-radius: .5rem;
 }
 
-.team .swiper-slide h3, .mentors .swiper-slide h3, .advisory-board .swiper-slide h3 {
+.team .slide h3 {
+    margin-top: 1.5rem;
     font-size: 2rem;
+    text-align: center;
     color: var(--white);
-    margin: 1rem 0;
 }
 
-.team .swiper-slide p, .mentors .swiper-slide p, .advisory-board .swiper-slide p {
-    font-size: 1.6rem;
-    color: var(--grey);
-    line-height: 1.5;
+.team .slide .share {
+    position: absolute;
+    top: 1rem;
+    left: -10rem;
 }
 
-.team .swiper-slide .share a, .mentors .swiper-slide .share a, .advisory-board .swiper-slide .share a {
-    display: inline-block;
-    margin: 0 .5rem;
-    color: var(--blue);
+.team .slide:hover .share {
+    left: 2rem;
+}
+
+.team .slide .share a {
+    display: block;
+    margin-top: 1rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
     font-size: 2rem;
+}
+
+.team .slide .share a:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+#dheeraj {
+    border: solid var(--blue) 5px;
+}
+
+#vedant {
+    border: solid var(--blue) 5px;
+}
+
+#harsha {
+    border: solid var(--blue) 5px;
+}
+
+#lochan {
+    border: solid var(--blue) 5px;
+}
+
+#krishiv {
+    border: solid var(--blue) 5px;
+}
+
+#jayden {
+    border: solid var(--blue) 5px;
+}
+
+#heer {
+    border: solid var(--blue) 5px;
+}
+
+#venkat {
+    border: solid var(--blue) 5px;
+}
+
+#victor {
+    border: solid var(--blue) 5px;
+}
+
+#advait {
+    border: solid var(--blue) 5px;
+}
+
+.mentors .desc {
+    text-align: center;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.team .slide, .mentors .slide {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+
+.team .slide img, .mentors .slide img {
+    height: 55rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.team .slide h3, .mentors .slide h3 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.team .slide .desc, .mentors .desc {
+    text-align: center;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.team .slide .share, .mentors .slide .share {
+    position: absolute;
+    top: 1rem;
+    left: -10rem;
+}
+
+.team .slide:hover .share, .mentors .slide:hover .share {
+    left: 2rem;
+}
+
+.team .slide .share a, .mentors .slide .share a {
+    display: block;
+    margin-top: 1rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.team .slide .share a:hover, .mentors .slide .share a:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.advisory-board .slide {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+
+.advisory-board .slide img {
+    height: 55rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.advisory-board .slide h3 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.advisory-board .slide .desc {
+    text-align: center;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.advisory-board .slide .share {
+    position: absolute;
+    top: 1rem;
+    left: -10rem;
+}
+
+.advisory-board .slide:hover .share {
+    left: 2rem;
+}
+
+.advisory-board .slide .share a {
+    display: block;
+    margin-top: 1rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.advisory-board .slide .share a:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+#advisory1, #advisory2, #advisory3 {
+    border: solid var(--blue) 5px;
 }
 
 .enroll .row {
@@ -360,7 +475,7 @@ section {
     border-radius: .5rem;
     background-color: var(--light-bg);
     font-size: 1.8rem;
-    color: var (--white);
+    color: var(--white);
     padding: 1.4rem;
     text-transform: none;
 }
@@ -368,6 +483,30 @@ section {
 .enroll .row form span {
     font-size: 1.5rem;
     color: var(--grey);
+}
+
+form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background-color: var(--light-bg);
+    font-size: 1.8rem;
+    width: 100%;
+    text-transform: none;
+    color: var(--white);
+}
+
+form input, form button {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background-color: var(--light-bg);
+    font-size: 1.8rem;
+    width: 100%;
+    text-transform: none;
+    color: var(--white);
 }
 
 .bam .row {
@@ -626,6 +765,147 @@ footer {
     font-size: 1.8rem;
 }
 
+.explore {
+    padding: 5rem 0;
+    background-color: var(--light-bg);
+    text-align: center;
+}
+
+.explore .heading {
+    font-size: 4rem;
+    color: var(--white);
+    margin-bottom: 3rem;
+}
+
+.explore-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.explore-box {
+    background: var(--dark-bg);
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 30rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.explore-box h3 {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.explore-box p {
+    font-size: 1.4rem;
+    color: var(--grey);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.btn-explore {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    color: var(--white);
+    background: var(--blue);
+    border-radius: .5rem;
+    text-decoration: none;
+    transition: background 0.3s;
+    align-self: center;
+    margin-top: 2rem;
+}
+
+.btn-explore:hover {
+    background: var(--dark-blue);
+}
+
+/* Mentors Section */
+.mentors .swiper-wrapper,
+.advisors .swiper-wrapper {
+    display: flex;
+}
+
+.mentors .slide, 
+.advisors .slide {
+    flex: 1 1 30%; /* Adjust the width as needed */
+    margin: 0 10px; /* Adjust the margin as needed */
+    position: relative;
+    overflow: hidden;
+}
+
+.mentors .slide img, 
+.advisors .slide img {
+    height: 55rem; /* Ensure consistent height for all images */
+    width: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+    border-radius: .5rem;
+}
+
+.mentors .slide h3, 
+.advisors .slide h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--white);
+    margin-top: 1.5rem;
+}
+
+.mentors .slide .desc, 
+.advisors .slide .desc {
+    text-align: center;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.mentors .slide .share, 
+.advisors .slide .share {
+    position: absolute;
+    top: 1rem;
+    left: -10rem;
+}
+
+.mentors .slide:hover .share, 
+.advisors .slide:hover .share {
+    left: 2rem;
+}
+
+.mentors .slide .share a, 
+.advisors .slide .share a {
+    display: block;
+    margin-top: 1rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.mentors .slide .share a:hover, 
+.advisors .slide .share a:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+#mentor1, #mentor2, #mentor3,
+#advisor1, #advisor2, #advisor3 {
+    border: solid var(--blue) 5px;
+}
+
+
+
+  
+
+
 @media (max-width: 991px) {
     html {
         font-size: 55%;
@@ -723,5 +1003,14 @@ footer {
         margin: 10px;
         width: 100%;
         text-align: center;
+    }
+
+    .team .swiper-pagination-bullet {
+        background-color: #ffffff; /* default color */
+        border: 1px solid var(--blue);
+    }
+
+    .team .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: var(--blue); /* active slide color */
     }
 }
