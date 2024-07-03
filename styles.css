@@ -901,6 +901,9 @@ footer {
     border: solid var(--blue) 5px;
 }
 
+#outcomes, #events, #donate{
+    text-align: center;
+}
 
 
   
