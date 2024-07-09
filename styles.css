@@ -918,12 +918,12 @@ footer {
         font-size: 4rem;
     }
 
-    .team .swiper-pagination-bullet {
+    .team.swiper-pagination-bullet, .mentors.swiper-pagination-bullet, .advisors.swiper-pagination-bullet {
         background-color: #ffffff; /* default color */
         border: 1px solid var(--blue);
     }
 
-    .team .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    .team .swiper-pagination-bullet.swiper-pagination-bullet-active, .mentors .swiper-pagination-bullet.swiper-pagination-bullet-active, .advisors.team .swiper-pagination-bullet.swiper-pagination-bullet-active {
         background-color: var(--blue); /* active slide color */
     }
 }
@@ -938,7 +938,7 @@ footer {
         border: 1px solid var(--blue);
     }
 
-    .team .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    .team .swiper-pagination-bullet.swiper-pagination-bullet-active, .mentors .swiper-pagination-bullet.swiper-pagination-bullet-active, .advisors .swiper-pagination-bullet.swiper-pagination-bullet-active {
         background-color: var(--blue); /* active slide color */
     }
 
@@ -984,12 +984,12 @@ footer {
         font-size: 3rem;
     }
 
-    .team .swiper-pagination-bullet {
+    .team .swiper-pagination-bullet, .mentors .swiper-pagination-bullet, .advisors .swiper-pagination-bullet {
         background-color: #ffffff; /* default color */
         border: 1px solid var(--blue);
     }
 
-    .team .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    .team .swiper-pagination-bullet.swiper-pagination-bullet-active, .mentors .swiper-pagination-bullet.swiper-pagination-bullet-active, .advisors .swiper-pagination-bullet.swiper-pagination-bullet-active {
         background-color: var(--blue); /* active slide color */
     }
 }
@@ -1008,12 +1008,12 @@ footer {
         text-align: center;
     }
 
-    .team .swiper-pagination-bullet {
+    .team .swiper-pagination-bullet, .mentors .swiper-pagination-bullet, .advisors .swiper-pagination-bullet {
         background-color: #ffffff; /* default color */
         border: 1px solid var(--blue);
     }
 
-    .team .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    .team .swiper-pagination-bullet.swiper-pagination-bullet-active, .mentors .swiper-pagination-bullet.swiper-pagination-bullet-active, .advisors .swiper-pagination-bullet.swiper-pagination-bullet-active {
         background-color: var(--blue); /* active slide color */
     }
 }

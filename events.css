@@ -92,6 +92,13 @@ body {
 }
 
 
+.outcomeheading {
+    color: var(--blue); /* Assuming --blue is defined in your :root as the desired blue color */
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+}
+
 @media (max-width: 768px) {
     .events-gallery {
         grid-template-columns: 1fr;
