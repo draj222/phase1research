@@ -62,3 +62,49 @@ resumeInput.addEventListener('change', function() {
 });
 
 fileLabel.parentNode.insertBefore(resumeLabel, resumeInput.nextSibling);
+
+// Add the handleSubmit function for form submission
+function handleSubmit(event) {
+  event.preventDefault();
+
+  const scriptId = document.getElementById('scriptId').value;
+  const scriptURL = `https://script.google.com/macros/s/${scriptId}/exec`;
+  const form = document.forms['enrollForm'];
+
+  // Show spinner immediately
+  const spinner = document.getElementById('spinner');
+  spinner.classList.add('show');
+
+  fetch(scriptURL, { 
+      method: 'POST', 
+      body: new FormData(form) 
+  })
+  .then(response => {
+      spinner.classList.remove('show'); // Hide spinner
+      if (response.ok) {
+          return response.text(); // Read response
+      } else {
+          return response.text().then(text => {
+              throw new Error(text);
+          });
+      }
+  })
+  .then(data => {
+      // Show the toast
+      const toast = document.getElementById('toast');
+      toast.classList.add('show');
+
+      // Hide the toast after 1 second and redirect
+      setTimeout(() => {
+          toast.classList.remove('show');
+          window.location.href = 'https://p1research.org/#home'; // Replace with your success page URL
+      }, 1000); // Shortened time
+  })
+  .catch(error => {
+      spinner.classList.remove('show'); // Hide spinner
+      console.error('Error!', error.message);
+      alert(`There was a problem with your form submission: ${error.message}`);
+  });
+}
+
+document.getElementById('enrollForm').addEventListener('submit', handleSubmit);
